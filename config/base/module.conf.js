@@ -3,7 +3,7 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const conf = require('./conf')[process.env.NODE_ENV];
 
 module.exports = {
-  dev: {
+  develop: {
     rules: [
       {
         test: /\.js$/,
@@ -53,7 +53,7 @@ module.exports = {
       }
     ]
   },
-  prod: {
+  production: {
     rules: [
       {
         test: /\.js$/,

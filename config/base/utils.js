@@ -63,8 +63,8 @@ function getPage(pathDir, ico = 'png') {
     chunk = pathname.replace(new RegExp(extname), '');
     conf = {
       filename: pathname,
-      template: `html-loader?attrs[]=img:src&attrs[]=img:data-src!ejs-html-loader!${file}`,
-      inject: true,
+      template: file,
+      inject: false,
       favicon: path.join(__dirname,'../../favicon.' + ico),
       chunks: ['common/base',chunk],
       chunksSortMode: 'manual'

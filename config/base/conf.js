@@ -1,5 +1,5 @@
 module.exports = {
-  dev: {
+  develop: {
     mobile: false,
     mode: 'development',
     filename: '[name].js',
@@ -11,7 +11,7 @@ module.exports = {
     },
     port: 5555
   },
-  prod: {
+  production: {
     mobile: true,
     mode: 'production',
     filename: '[name].[hash:8].js',
