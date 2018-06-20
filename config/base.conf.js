@@ -30,7 +30,7 @@ module.exports = {
   },
   resolve: {
     alias: {
-      'src': path.join(__dirname, '../src')
+      '@src': path.join(__dirname, '../src')
     }
   },
   stats: "errors-only",
